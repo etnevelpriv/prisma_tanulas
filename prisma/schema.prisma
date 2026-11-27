@@ -17,3 +17,10 @@ model Forecast {
   temp Int
   weather String
 }
+
+model Location {
+  id Int @id @default(autoincrement())
+  name String
+  lat Decimal
+  long Decimal
+}
